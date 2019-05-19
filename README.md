@@ -18,8 +18,8 @@ the service will then pair up the most likely candidates together.
 
 # Starting the Sample Application
 Clone the Repos:
-Front End Repo is located here: https://github.com/team-sweet
-Back End Repo is located here: https://github.com/FreedomFrog/kinky
+###Front End Repo is located here: https://github.com/team-sweet
+###Back End Repo is located here: https://github.com/FreedomFrog/kinky
 
 Be sure and Launch the WILL 3 server: 
 The web based app needs a web server. Python's `SimpleHTTPServer` provides an easy way to get started.
