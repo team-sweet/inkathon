@@ -67,24 +67,24 @@
 			}).catch(console.error)
 		}
 
-	function analyse() {
-			let strokes = WILL.strokes
-			let strokesArr = [];
+	// function analyse() {
+	// 		let strokes = WILL.strokes
+	// 		let strokesArr = [];
 			
-			strokes.forEach(stroke => {
-				for (let i = 0; i < stroke.length; i++) {
-					let cp = stroke.getPoint(i)
-					let cpStroke = {
-						x: cp.x,
-						y: cp.y
-					}
-					// console.log(cp.x, cp.y);
-					strokesArr.push(cpStroke);
-				}
-				return console.log(strokesArr);
-			})
+	// 		strokes.forEach(stroke => {
+	// 			for (let i = 0; i < stroke.length; i++) {
+	// 				let cp = stroke.getPoint(i)
+	// 				let cpStroke = {
+	// 					x: cp.x,
+	// 					y: cp.y
+	// 				}
+	// 				// console.log(cp.x, cp.y);
+	// 				strokesArr.push(cpStroke);
+	// 			}
+	// 			return console.log(strokesArr);
+	// 		})
 
-		}
+	// 	}
 
 		function load(sample) {
 			if (!sample)
