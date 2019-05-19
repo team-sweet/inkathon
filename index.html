@@ -30,6 +30,7 @@
 	<script src="./scripts/Inking.js"></script>
 	<script src="./scripts/VectorInking.js"></script>
 	<script src="./scripts/RasterInking.js"></script>
+	
 
 	<script type="text/javascript">
 		function init() {
@@ -124,35 +125,30 @@
 		}
 		#VectorBrush {display: inline-block;};
 	</style>
+	<link rel="stylesheet" href="./index.css">
 </head>
 <body>
 	<!-- <div class="header">
 		<h1> kINKy</h1>
 	</div> -->
 	<div class="menu" style="display: none">
-
-
 		<ul>
-			<li>Drawing with Pointing Devices</li>
-			<ul>
-				<li><a href="javascript: void(0)" id="sample3" onclick="load(3)">Mixed inking (Vector and Particle)</a></li>
-			</ul>
+			<li><a href="javascript: void(0)" id="sample3" onclick="load(3)">Mixed inking (Vector and Particle)</a></li>
 		</ul>
 	</div>
-
 	<div class="app" style="display: none">
-		<canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
 		<div class="buttons">
 			<div id="VectorBrush" style="display: none">
-				<button onclick="WILL.switch(WILL.Color.from(255, 0, 0, 0.3))">RED - alpha 0.3</button>
-				<button onclick="WILL.switch(WILL.Color.from(0, 255, 0, 0.5))">GREEN - alpha 0.5</button>
-				<button onclick="WILL.switch(WILL.Color.from(0, 0, 255, 1))">BLUE - alpha 1</button>
-			</div>
+					<button onclick="WILL.switch(WILL.Color.from(255, 0, 0, 0.3))">RED - alpha 0.3</button>
+					<button onclick="WILL.switch(WILL.Color.from(0, 255, 0, 0.5))">GREEN - alpha 0.5</button>
+					<button onclick="WILL.switch(WILL.Color.from(0, 0, 255, 1))">BLUE - alpha 1</button>
+					<button id="RasterBrush" onclick="WILL.switch()" style="display: none">Particles</button>
+					<!-- <button id="RasterBrush" onclick="WILL.switch(WILL.Color.from(0, 0, 255, 1))">Particles</button> -->
+		
+					<button onclick="WILL.clear()">Clear</button>
+					<canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+				</div>
 
-			<button id="RasterBrush" onclick="WILL.switch()" style="display: none">Particles</button>
-			<!-- <button id="RasterBrush" onclick="WILL.switch(WILL.Color.from(0, 0, 255, 1))">Particles</button> -->
-
-			<button onclick="WILL.clear()">Clear</button>
 
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<button id="analyse" style="display: none" onclick="analyse()">analyse</button>
