@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>WILL 3 beta demo</title>
+	<title>kINKy</title>
 
 	<script src="./engine/kotlin.js"></script>
 	<script src="./engine/wacom-digital-ink-min.js"></script>
@@ -44,7 +44,6 @@
 				else
 					document.querySelector("#analyse").style.display = "";
 
-				document.querySelector(".title").innerText = sample + ". " +  document.querySelector("#sample" + sample).innerHTML;
 				document.querySelector(".app").style.display = "";
 			}
 			else
@@ -131,20 +130,17 @@
 		<h1> kINKy</h1>
 	</div> -->
 	<div class="menu" style="display: none">
-		<h2>Samples content</h2>
 
-		<ol>
+
+		<ul>
 			<li>Drawing with Pointing Devices</li>
-			<ol>
-				<li><a href="javascript: void(0)" id="sample1" onclick="load(1)">Vector Brush</a></li>
-				<li><a href="javascript: void(0)" id="sample2" onclick="load(2)">Particle Brush</a></li>
+			<ul>
 				<li><a href="javascript: void(0)" id="sample3" onclick="load(3)">Mixed inking (Vector and Particle)</a></li>
-			</ol>
-		</ol>
+			</ul>
+		</ul>
 	</div>
 
 	<div class="app" style="display: none">
-		<h3 class="title"></h3>
 		<canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
 		<div class="buttons">
 			<div id="VectorBrush" style="display: none">
@@ -161,7 +157,6 @@
 			<button id="analyse" style="display: none" onclick="analyse()">analyse</button>
 
 			<div class="right">
-				<button onclick="load()">Back to menu</button>
 				<button type="button" onclick="recognizeInk()">Recognize Ink</button>
 			</div>
 		</div>
