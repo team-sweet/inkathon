@@ -56,7 +56,7 @@
 		function analyse() {
 			let bytes = WILL.encode();
 
-			let url = "https://api-web.wacom.com/api/semantic/v1.0/enrich?language=en&country=US&hwr_engine=myscript&output=will3";
+			let url = "https://api-web.wacom.com/api/semantic/v1.0/enrich?language=en&country=US&hwr_engine=experimental&output=will3";
 			let options = {method: "POST", body: bytes};
 
 			fetch(url, options).then(response => {
@@ -66,6 +66,25 @@
 
 				console.log(data)
 			}).catch(console.error)
+		}
+
+	function analyse() {
+			let strokes = WILL.strokes
+			let strokesArr = [];
+			
+			strokes.forEach(stroke => {
+				for (let i = 0; i < stroke.length; i++) {
+					let cp = stroke.getPoint(i)
+					let cpStroke = {
+						x: cp.x,
+						y: cp.y
+					}
+					// console.log(cp.x, cp.y);
+					strokesArr.push(cpStroke);
+				}
+				return console.log(strokesArr);
+			})
+
 		}
 
 		function load(sample) {
@@ -81,7 +100,7 @@
 	</script>
 
 	<script src="./main.js"></script>
-	<script src="./microsoft.js"></script>
+	<!-- <script src="./microsoft.js"></script> -->
 
 	<style type="text/css">
 		body {
