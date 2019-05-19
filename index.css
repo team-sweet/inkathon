@@ -1,8 +1,21 @@
+body {
+  margin-bottom: 50em; 
+}
 #canvas {
-  /* display:none; */
-  display: inline-block;
-  width:80%;
-  margin: 4em;
+  display: block;
+  width:72%;
+  margin:0 auto;
+  
   border: 1px solid black;
   cursor: default;
+}
+
+.prompt h2 {
+  /* display:none; */
+
+  text-align: center;
+  font-family: 'Montserrat', cursive;
+  font-size: 5em;
+  color: rgb(237, 99, 145);
+  /* background-color: #5cbbf1; */
 }

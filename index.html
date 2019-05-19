@@ -125,6 +125,7 @@
 		}
 		#VectorBrush {display: inline-block;};
 	</style>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Poiret+One|Reenie+Beanie&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./index.css">
 </head>
 <body>
@@ -137,15 +138,18 @@
 		</ul>
 	</div>
 	<div class="app" style="display: none">
-		<div class="buttons">
-			<div id="VectorBrush" style="display: none">
-					<button onclick="WILL.switch(WILL.Color.from(255, 0, 0, 0.3))">RED - alpha 0.3</button>
-					<button onclick="WILL.switch(WILL.Color.from(0, 255, 0, 0.5))">GREEN - alpha 0.5</button>
-					<button onclick="WILL.switch(WILL.Color.from(0, 0, 255, 1))">BLUE - alpha 1</button>
-					<button id="RasterBrush" onclick="WILL.switch()" style="display: none">Particles</button>
-					<!-- <button id="RasterBrush" onclick="WILL.switch(WILL.Color.from(0, 0, 255, 1))">Particles</button> -->
-		
-					<button onclick="WILL.clear()">Clear</button>
+			<div class="buttons">
+				<div id="VectorBrush" style="display: none">
+						<button onclick="WILL.switch(WILL.Color.from(255, 0, 0, 0.3))">RED - alpha 0.3</button>
+						<button onclick="WILL.switch(WILL.Color.from(0, 255, 0, 0.5))">GREEN - alpha 0.5</button>
+						<button onclick="WILL.switch(WILL.Color.from(0, 0, 255, 1))">BLUE - alpha 1</button>
+						<button id="RasterBrush" onclick="WILL.switch()" style="display: none">Particles</button>
+						<!-- <button id="RasterBrush" onclick="WILL.switch(WILL.Color.from(0, 0, 255, 1))">Particles</button> -->
+						
+						<button onclick="WILL.clear()">Clear</button>
+							<div class="prompt">
+								<h2>Draw Your Spirit Animal</h2>
+							</div>
 					<canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
 				</div>
 
