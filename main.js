@@ -22,6 +22,10 @@ addEventListener("load", () => {
 
 	let pureGLCanvas = (sample == 2);
 	let canvas = document.querySelector("canvas");
+	canvas.getContext('2d', {
+		desynchronized: true,
+
+	})
 	let vInker;
 	let rInker;
 

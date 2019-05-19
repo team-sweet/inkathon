@@ -2,10 +2,6 @@ body {
   margin-bottom: 50em; 
 }
 #canvas {
-  display: block;
-  width:72%;
-  margin:0 auto;
-  
   border: 1px solid black;
   cursor: default;
 }
