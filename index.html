@@ -44,7 +44,6 @@
 				else
 					document.querySelector("#analyse").style.display = "";
 
-				document.querySelector(".title").innerText = sample + ". " +  document.querySelector("#sample" + sample).innerHTML;
 				document.querySelector(".app").style.display = "";
 			}
 			else
@@ -123,7 +122,6 @@
 	</div>
 
 	<div class="app" style="display: none">
-		<h3 class="title"></h3>
 		<canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
 		<div class="buttons">
 			<div id="VectorBrush" style="display: none">
